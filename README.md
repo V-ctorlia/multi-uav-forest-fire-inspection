@@ -6,7 +6,7 @@ This repository provides the MATLAB implementation and experiment data for the p
 2. **3D path planning:** DE-MOGWO plans the flight path for each assigned task subset under terrain, altitude, and maneuverability constraints.
 
 The output of the task allocation stage is used as the input to the subsequent path planning stage.
-
+**NOTE** **The complete version will be released after the paper is accepted.**
 ## Requirements
 
 - MATLAB with standard numerical and plotting functions.
@@ -18,7 +18,7 @@ The output of the task allocation stage is used as the input to the subsequent p
 论文代码/
 ├── DMOGWO/                 # Stage 1: multi-UAV task allocation
 │   ├── main.m              # Main task-allocation experiment
-│   ├── MOGWO.m             # Discrete multi-objective grey wolf optimizer
+│   ├── DMOGWO.m             # Discrete multi-objective grey wolf optimizer
 │   ├── initialize_population*.m
 │   ├── Swap.m, Shift.m, Symmetry.m
 │   ├── Cross.m, Crossover.m
@@ -29,7 +29,7 @@ The output of the task allocation stage is used as the input to the subsequent p
 │   └── solution*.mat        # Saved allocation results
 ├── DE-MOGWO/               # Stage 2: 3D UAV path planning
 │   ├── main2.m              # Main 3D path-planning experiment
-│   ├── MGWO.m               # Diversity-enhanced MOGWO implementation
+│   ├── DE-MOGWO.m               # Diversity-enhanced MOGWO implementation
 │   ├── initialize.m, initialize1.m
 │   ├── evaluate.m
 │   ├── adjust_HIGHT.m
